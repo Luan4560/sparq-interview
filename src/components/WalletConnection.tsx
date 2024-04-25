@@ -17,6 +17,7 @@ const WalletConnection: React.FC = () => {
     web3.eth.defaultAccount = account.address;
 
     const handleContractABI = () => {
+        // @ts-ignore
         ContractInstance = new web3.eth.Contract(abi, contractAddress);
     }
 
